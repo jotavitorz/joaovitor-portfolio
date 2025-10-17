@@ -1,9 +1,8 @@
 
 export function Home(){
     return (
-        <div>
-            Página Home
-        </div>
+        <main> 
+            <h1>Page Home</h1>
+        </main>
     )
 }
-
