@@ -5,7 +5,7 @@ import about2Img from "../../assets/github-image.jpeg";
 
 export function AboutPreview(){
     return (
-        <section className="h-screen w-full bg-zinc-900 bg-linear-to-b from-zinc-900 to-slate-800 from-20%  flex items-center py-16">
+        <section className="min-h-screen w-full bg-linear-to-b from-zinc-900 to-slate-800 from-20%  flex items-center py-16">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-neutral-200 px-4">
             <div className="relative">
