@@ -9,40 +9,40 @@ export function Technologies() {
 
             <div className="w-full px-4 py-6">
 
-                <div className="grid [grid-template-columns:repeat(auto-fit,minmax(100px,1fr))] text-neutral-200 gap-2">
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] text-neutral-200 gap-2">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaHtml5 className="w-8e h-8" />
                         HTML
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaCss3Alt className="w-8 h-8" />
                         CSS
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaJs className="w-8 h-8" />
                         JavaScript
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaReact className="w-8 h-8" />
                         React JS
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <BiLogoTypescript className="w-8 h-8" />
                         TypeScript
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <BiLogoFirebase className="w-8 h-8" />
                         Firebase
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <BiLogoTailwindCss className="w-8 h-8" />
                         TailWindCSS
                     </span>
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaGitAlt className="w-8 h-8" />
                         Git
                     </span>  
-                    <span className="flex flex-col gap-1 font-bold items-center">
+                    <span className="flex flex-col gap-1 font-bold items-center select-none">
                         <FaGithub className="w-8 h-8" />
                         GitHub
                     </span>

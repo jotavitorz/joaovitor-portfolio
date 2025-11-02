@@ -28,28 +28,28 @@ export function Hero(){
 
                 <div className="flex gap-4 mt-4 items-center">
 
-                        <div className="w-22 h-1 bg-gray-500 rounded-2xl"></div>
+                    <div className="w-22 h-1 bg-gray-500 rounded-2xl"></div>
 
-                        <a 
-                            href="#"
-                            target="_blank"
-                        >
-                            <FaGithub className="w-8 h-8" />
-                        </a>
-                        <a 
-                            href="#"
-                            target="_blank"
-                        >
-                            <FaInstagram className="w-8 h-8" />
-                        </a>
-                        <a 
-                            href="#"
-                            target="_blank"
-                        >
-                            <FaLinkedin className="w-8 h-8" />
-                        </a>
+                    <a 
+                        href="#"
+                        target="_blank"
+                    >
+                        <FaGithub className="w-8 h-8" />
+                    </a>
+                    <a 
+                        href="#"
+                        target="_blank"
+                    >
+                        <FaInstagram className="w-8 h-8" />
+                    </a>
+                    <a 
+                        href="#"
+                        target="_blank"
+                    >
+                        <FaLinkedin className="w-8 h-8" />
+                    </a>
 
-                        <div className="w-22 h-1 bg-gray-500 rounded-md"></div>
+                    <div className="w-22 h-1 bg-gray-500 rounded-md"></div>
                 </div>
             </section>
         </div>
