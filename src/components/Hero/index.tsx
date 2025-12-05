@@ -11,7 +11,7 @@ export function Hero(){
 
                 <TypeAnimation
                     sequence={[
-                        'Hello 	🖖',
+                        'Hello 🖖',
                         2000,
                         'I’m João Vitor',
                         2000,
@@ -20,36 +20,38 @@ export function Hero(){
                     ]}
                     wrapper="h2"
                     speed={30}
-                    style={{ fontSize: '6em', display: 'inline-block' }}
+                    className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl inline-block" 
                     repeat={Infinity}
                 />
 
-                <p className="text-2xl mt-4">Construo soluções web que conectam pessoas e tecnologia.</p>
+                <p className="w-full text-center text-[14px] sm:text-lg md:text-xl lg:text-2xl mt-4">
+                    Construo soluções web que conectam pessoas e tecnologia.
+                </p>
 
                 <div className="flex gap-4 mt-4 items-center">
 
-                    <div className="w-22 h-1 bg-gray-500 rounded-2xl"></div>
+                    <div className="w-16 sm:w-22 h-1 bg-gray-500 rounded-2xl"></div>
 
                     <a 
                         href="#"
                         target="_blank"
                     >
-                        <FaGithub className="w-8 h-8" />
+                        <FaGithub className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
                     <a 
                         href="#"
                         target="_blank"
                     >
-                        <FaInstagram className="w-8 h-8" />
+                        <FaInstagram className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
                     <a 
                         href="#"
                         target="_blank"
                     >
-                        <FaLinkedin className="w-8 h-8" />
+                        <FaLinkedin className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
 
-                    <div className="w-22 h-1 bg-gray-500 rounded-md"></div>
+                    <div className="w-16 sm:w-22 h-1 bg-gray-500 rounded-md"></div>
                 </div>
             </section>
         </div>

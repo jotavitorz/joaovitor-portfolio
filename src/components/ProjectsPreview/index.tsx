@@ -45,38 +45,55 @@ const projetos: ProjetsProps[] = [
     }
 ];
 
-
 export function ProjectsPreview() {
     return (
         <section className="min-h-screen w-full bg-slate-800 py-24 px-8">
             
-            <h5 className="text-5xl text-orange-600 font-semibold text-center mb-20">Projetos</h5>
+            <h5 className="text-4xl sm:text-5xl text-orange-600 font-semibold text-center mb-20">Projetos</h5>
 
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-8 max-w-[1200px] my-0 mx-auto">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-8 max-w-[1200px] my-0 mx-auto">
                 
                 {projetos.map((projeto) => (
-                    <div key={projeto.id} className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex flex-col">
+                    <div key={projeto.id} 
+                        className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex flex-col h-full hover:scale-105 duration-300 transition-transform">
 
                         <img className="h-[300px] w-full object-cover" src={projeto.image} alt={`Foto do Projeto ${projeto.title}`} />
-                        <div className="p-4 relative">
-                            <h6 className="text-3xl text-orange-600 font-semibold mb-4 mt-2">{projeto.title}</h6>
-                            <p className="text-lg mb-4">{projeto.description}</p>
 
-                            <nav className="flex justify-around items-center text-slate-900">
-                                <a href={projeto.deploy} target="_blank" className="py-2 px-4 bg-neutral-100  font-bold rounded-md flex items-center gap-2">
+                        <ul className="flex mt-3 pl-2">
+                            {projeto.technologies.map((technologie) => (
+                                <li className="flex p-1 mx-1 bg-gray-700 rounded text-[14px] font-bold">
+                                    {technologie}
+                                </li>
+                            ))}
+                        </ul>                       
+
+                        <div className="p-4 relative flex flex-col grow">
+                            <h6 className="text-2xl sm:text-3xl text-orange-600 font-semibold mb-4 mt-2">
+                                {projeto.title}
+                            </h6>
+
+                            <p className="sm:text-lg mb-4">
+                                {projeto.description}
+                            </p>
+
+                            <nav className="flex justify-around items-center text-slate-900 mt-auto">
+                                <a href={projeto.deploy} target="_blank" 
+                                className="py-2 px-4 bg-neutral-100 font-bold rounded-md flex items-center gap-2">
                                     <GrDeploy className="w-4 h-4" />
-                                    <span>Ver Projeto</span>
-
+                                    <span className="text-sm sm:text-[16px]">Projeto</span>
                                 </a>
-                                <a href={projeto.repository} target="_blank" className="py-2 px-4 bg-neutral-100   font-bold rounded-md flex items-center gap-2">
+
+                                <a href={projeto.repository} target="_blank" 
+                                className="py-2 px-4 bg-neutral-100 font-bold rounded-md flex items-center gap-2">
                                     <FaGithub className="w-4 h-4" />
-                                    <span>Repositorio</span>
+                                    <span className="text-xs sm:text-[16px]">Repositório</span>
                                 </a>
                             </nav>
-                        </div>                    
+                        </div>
                     </div>
+
                 ))}
-                                                                                   
+                                                                                
             </div>
 
         </section>

@@ -40,7 +40,7 @@ export function ContactPreview() {
     return (
         <section className="min-h-full w-full bg-linear-to-b from-slate-800 to-zinc-900 from-90% py-16">
 
-            <h2 className="text-center text-5xl font-bold text-orange-600">Contato</h2>
+            <h2 className="text-center text-4xl sm:text-5xl font-bold text-orange-600">Contato</h2>
 
             <form onSubmit={sendEmail} className=" flex flex-col mx-auto max-w-[680px] my-10 gap-6 p-4" >
 

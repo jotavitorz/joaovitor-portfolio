@@ -5,11 +5,11 @@ import about2Img from "../../assets/github-image.jpeg";
 
 export function AboutPreview(){
     return (
-        <section className="min-h-screen w-full bg-linear-to-b from-zinc-900 to-slate-800 from-20%  flex items-center py-16">
+        <section className="min-h-screen w-full  bg-linear-to-b from-zinc-900 to-slate-800 from-20%  flex items-center py-16">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-neutral-200 px-4">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-neutral-200 px-4 mx-auto">
             <div className="relative">
-                <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
+                <div className="relative w-full h-[280px] sm:h-[400px] rounded-3xl overflow-hidden">
                     <img src={about1Img} alt="Foto do Setup" className="object-cover hover:scale-110 duration-300" />
                 </div>
 
@@ -21,8 +21,8 @@ export function AboutPreview(){
 
             </div>
 
-            <div className="font-semibold text-lg">
-                <h3 className="text-5xl font-bold mb-6 text-orange-600">Sobre min</h3>
+            <div className="font-semibold sm:text-lg">
+                <h3 className="text-4xl sm:text-5xl font-bold mb-6 text-orange-600">Sobre min</h3>
 
                 <p className="mb-4">
                     Sou João Vitor, desenvolvedor focado em criar soluções web modernas, rápidas e bem estruturadas.
