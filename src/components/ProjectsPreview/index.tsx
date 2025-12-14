@@ -5,7 +5,7 @@ import projectPview1 from "../../assets/project-1.png";
 import projectPview2 from "../../assets/project-2.png";
 import projectPview3 from "../../assets/project-3.png";
 
-interface ProjetsProps {
+export interface ProjetsProps {
     id: string;
     title: string;
     description: string
@@ -61,7 +61,7 @@ export function ProjectsPreview() {
 
                         <ul className="flex mt-3 pl-2">
                             {projeto.technologies.map((technologie) => (
-                                <li className="flex p-1 mx-1 bg-gray-700 rounded text-[14px] font-bold">
+                                <li key={technologie} className="flex p-1 mx-1 bg-gray-700 rounded text-[14px] font-bold">
                                     {technologie}
                                 </li>
                             ))}
