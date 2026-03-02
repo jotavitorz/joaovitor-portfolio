@@ -10,7 +10,7 @@ export function Home(){
         <main> 
             <Hero />
             <AboutPreview />
-            <Technologies />
+            <Technologies showTitle={true} />
             <ProjectsPreview />
             <ContactPreview />
         </main>

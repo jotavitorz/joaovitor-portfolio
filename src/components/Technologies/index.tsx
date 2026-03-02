@@ -1,55 +1,24 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaGitAlt } from "react-icons/fa";
-import { BiLogoTypescript, BiLogoTailwindCss, BiLogoFirebase } from "react-icons/bi"
+import { techs } from "../../constants";
+import type { TechnologiesProps } from "../../types";
 
-export function Technologies() {
+export function Technologies({ showTitle }: TechnologiesProps) {
     return (
-        <section className="h-full w-full bg-slate-800 pb-16">
+        <section className="h-full w-full bg-slate-900 pb-16">
 
-            <h4 className="text-4xl sm:text-5xl text-orange-600 font-semibold text-center mb-10">Tecnologias</h4>
+            {showTitle && <h4 className="text-4xl sm:text-5xl text-orange-600 font-semibold text-center mb-10">Tecnologias</h4>}
 
-            <div className="w-full px-4 py-6">
+            <div className="w-full max-w-6xl px-4 py-6 mx-auto">
 
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] text-neutral-200 gap-2">
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaHtml5 className="w-8 h-8" />
-                        HTML
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaCss3Alt className="w-8 h-8" />
-                        CSS
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaJs className="w-8 h-8" />
-                        JavaScript
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaReact className="w-8 h-8" />
-                        React JS
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <BiLogoTypescript className="w-8 h-8" />
-                        TypeScript
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <BiLogoFirebase className="w-8 h-8" />
-                        Firebase
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <BiLogoTailwindCss className="w-8 h-8" />
-                        TailWindCSS
-                    </span>
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaGitAlt className="w-8 h-8" />
-                        Git
-                    </span>  
-                    <span className="flex flex-col gap-1 font-bold items-center select-none">
-                        <FaGithub className="w-8 h-8" />
-                        GitHub
-                    </span>
+                    {techs.map((tech) => (
+                        <span key={tech.name} className="flex flex-col gap-1 font-bold items-center select-none">
+                            <tech.icon className="w-8 h-8" />
+                            {tech.name}
+                        </span>
+                    ))}
                 </div>
 
             </div>    
-
         </section>
     )
 }

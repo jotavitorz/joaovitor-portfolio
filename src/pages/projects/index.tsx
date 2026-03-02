@@ -1,11 +1,20 @@
 import { GrDeploy } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
-import projectPview1 from "../../assets/p-1.png";
-import projectPview2 from "../../assets/ex-1.png";
-import projectPview3 from "../../assets/p-3.png";
-import { type ProjetsProps } from "../../components/ProjectsPreview";
+import projectPview1 from "../../assets/images/project-1.png";
+import projectPview2 from "../../assets/images/project-2.png";
+import projectPview3 from "../../assets/images/project-3.png";
 
-const projetos: ProjetsProps[] = [
+interface ProjetsProps {
+    id: string;
+    title: string;
+    description: string
+    image: string;
+    technologies: string[];
+    repository: string;
+    deploy: string;
+}
+
+export const projetos: ProjetsProps[] = [
     {
         id: "1",
         title: "CryptoCurrency",
@@ -31,13 +40,13 @@ const projetos: ProjetsProps[] = [
         image: projectPview3,
         technologies: ["Next JS", "React", "TypScript", "Tailwind CSS"],
         repository: "https://github.com/jotavitorz/barber-house",
-        deploy: "https://jotavitor-links.vercel.app/",
+        deploy: "https://barber-house-three.vercel.app/",
     }
 ];
 
 export function Projects(){
     return (
-        <section className="min-h-screen w-full bg-slate-800 pb-16 pt-35 px-8">
+        <section className="min-h-screen w-full bg-linear-to-b from-slate-900 to-zinc-900 from-90% py-35 px-8">
             
             <h5 className="text-4xl sm:text-5xl text-orange-600 font-bold text-center mb-20">PROJETOS</h5>
 
@@ -45,7 +54,7 @@ export function Projects(){
                 
                 {projetos.map((projeto) => (
                     <div key={projeto.id} 
-                        className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex lg:flex-row flex-col h-full hover:scale-105 duration-300 transition-transform items-center p-4">
+                        className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex lg:flex-row flex-col h-full hover:scale-105 duration-300 transition-transform items-center p-4 border-2 border-cyan-700">
 
                         <img className="flex-1 w-full h-[300px] object-cover rounded" src={projeto.image} alt={`Foto do Projeto ${projeto.title}`} />                    
 
@@ -58,9 +67,9 @@ export function Projects(){
                                 {projeto.description}
                             </p>
 
-                            <ul className="flex items-center my-4 pr-2">
+                            <ul className="flex flex-wrap mt-3 mb-4 gap-2 pl-2 w-full">
                                 {projeto.technologies.map((technologie) => (
-                                    <li key={technologie} className="select-none flex px-2 py-1 mx-1 bg-gray-700 rounded-full text-[8px] sm:text-xs font-bold">
+                                    <li key={technologie} className="px-2 py-1 bg-gray-700 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap">
                                         {technologie}
                                     </li>
                                 ))}
@@ -81,11 +90,8 @@ export function Projects(){
                             </nav>
                         </div>
                     </div>
-
-                ))}
-                                                                                
+                ))}                                                                            
             </div>
-
         </section>
     )
 }

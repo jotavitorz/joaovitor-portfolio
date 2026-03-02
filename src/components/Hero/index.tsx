@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation"
-import bgImage from "../../assets/bg-image.jpg";
+import bgImage from "../../assets/images/bg-image.jpg";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export function Hero(){
@@ -33,20 +33,23 @@ export function Hero(){
                     <div className="w-16 sm:w-22 h-1 bg-gray-500 rounded-2xl"></div>
 
                     <a 
-                        href="#"
+                        href="https://github.com/jotavitorz"
                         target="_blank"
+                        rel="external"
                     >
                         <FaGithub className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
                     <a 
-                        href="#"
+                        href="https://www.instagram.com/jvtorzx/"
                         target="_blank"
+                        rel="external"
                     >
                         <FaInstagram className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
                     <a 
-                        href="#"
+                        href="https://www.linkedin.com/in/devjoaovitor"
                         target="_blank"
+                        rel="external"
                     >
                         <FaLinkedin className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>

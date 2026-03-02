@@ -8,20 +8,23 @@ export function Footer() {
 
                 <div className="flex gap-4 mt-2 sm:mt-4 items-center">
                     <a  
-                        href="#"
+                        href="https://github.com/jotavitorz"
                         target="_blank"
+                        rel="external"
                     >
                         <FaGithub className="w-6 h-6 md:w-8 sm:h-8 text-gray-400 hover:-translate-y-2 duration-300 ease-in-out" />
                     </a>
                     <a 
-                        href="#"
+                        href="https://www.instagram.com/jvtorzx/"
                         target="_blank"
+                        rel="external"
                     >
                         <FaInstagram className="w-6 h-6 md:w-8 sm:h-8 text-gray-400 hover:-translate-y-2 duration-300 ease-in-out" />
                     </a>
                     <a 
-                        href="#"
+                        href="https://www.linkedin.com/in/devjoaovitor"
                         target="_blank"
+                        rel="external"
                     >
                         <FaLinkedin className="w-6 h-6 md:w-8 sm:h-8 text-gray-400 hover:-translate-y-2 duration-300 ease-in-out"  />
                     </a>

@@ -1,20 +1,20 @@
-import { IoDocumentOutline } from "react-icons/io5"
+import { IoMdDocument } from "react-icons/io"
 import { FaLinkedinIn } from "react-icons/fa";
-import about1Img from "../../assets/about-image.jpg";
-import about2Img from "../../assets/github-image.jpeg";
+import about1Img from "../../assets/images/about-image.jpg";
+import about2Img from "../../assets/images/github-image.jpeg";
 
 export function AboutPreview(){
     return (
-        <section className="min-h-screen w-full  bg-linear-to-b from-zinc-900 to-slate-800 from-20%  flex items-center py-16">
+        <section className="min-h-screen w-full bg-linear-to-b from-zinc-900 to-slate-900 from-20%  flex items-center py-16">
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-neutral-200 px-4 mx-auto">
+            <div className="w-full 2xl:max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-neutral-200 px-4 mx-auto">
                 <div className="relative">
-                    <div className="relative w-full h-[280px] sm:h-[400px] rounded-3xl overflow-hidden">
-                        <img src={about1Img} alt="Foto do Setup" className="object-cover hover:scale-110 duration-300" />
+                    <div className="relative w-full sm:h-[400px] rounded-3xl overflow-hidden">
+                        <img src={about1Img} alt="Foto do Setup" className="object-cover hover:scale-110 duration-300"/>
                     </div>
 
                     <div className="absolute w-30 h-30 right-4 -bottom-8 border-4 overflow-hidden rounded-lg border-gray-500">
-                        <a href="#">
+                        <a href="https://github.com/jotavitorz" rel="external" target="_blank">
                             <img src={about2Img} alt="Logo Github"/>
                         </a>
                     </div>
@@ -37,15 +37,15 @@ export function AboutPreview(){
                         Atualmente, foco em consolidar meus conhecimentos e evoluir como Desenvolvedor Front-End / Fullstack, buscando entregar valor através da tecnologia.
                     </p>
 
-                    <div className="flex w-full gap-10">
-                        <a href="#"
+                    <div className="flex w-full gap-10 text-lg">
+                        <a href="../../../public/assets/docs/JoaoVitor_CV_PTBR.pdf" download="JoaoVitor_CV_PTBR.pdf" type="application/pdf" 
                             className="bg-orange-600 px-4 py-2 rounded-md flex gap-2 items-center text-neutral-200"
                         >
-                            <IoDocumentOutline className="h-5 w-5" /> 
+                            <IoMdDocument className="h-5 w-5" /> 
                             Curriculo
                         </a>
 
-                        <a href="#"
+                        <a href="https://www.linkedin.com/in/devjoaovitor" rel="external" target="_blank"
                             className="bg-orange-600 px-4 py-2 rounded-md flex gap-2 items-center text-neutral-200"
                         >
                             <FaLinkedinIn className="h-5 w-5" />
