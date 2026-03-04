@@ -17,7 +17,6 @@ export function Technologies({ showTitle }: TechnologiesProps) {
                         </span>
                     ))}
                 </div>
-
             </div>    
         </section>
     )
