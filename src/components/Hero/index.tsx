@@ -40,7 +40,7 @@ export function Hero(){
                         <FaGithub className="w-6 h-6 sm:w-8 sm:h-8" />
                     </a>
                     <a 
-                        href="https://www.instagram.com/jvtorzx/"
+                        href="https://www.instagram.com/jotavitorz/"
                         target="_blank"
                         rel="external"
                     >

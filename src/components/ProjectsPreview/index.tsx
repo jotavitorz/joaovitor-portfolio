@@ -1,6 +1,6 @@
 import { GrDeploy } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
-import { projetos } from "../../pages/projects";
+import { projetos } from "../../constants/";
 
 export function ProjectsPreview() {
     return (
