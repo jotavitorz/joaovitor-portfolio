@@ -5,7 +5,6 @@ import { SiRedux, SiJest } from "react-icons/si";
 import imgProjectLinks from "../assets/images/linktree.png";
 import imgProjectBook from "../assets/images/book-tracker.png";
 import imgProjectCurrency from "../assets/images/currency.png";
-import imgProjectBarber from "../assets/images/barber-house.png";
 import imgProjectPortfolio from "../assets/images/portfolio.png";
 import type { TechProps } from "../types";
 import type { ProjectProps } from "../types";
