@@ -70,7 +70,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 ### Clonando o repositório
 
 ```bash
-git clone https://github.com/jotavitorz/portfolio.git
+git clone https://github.com/jotavitorz/joaovitor-portfolio.git
 cd portfolio
 ```
 
