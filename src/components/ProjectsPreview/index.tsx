@@ -11,8 +11,10 @@ export function ProjectsPreview() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                 
                 {projetos.map((projeto) => (
-                    <div key={projeto.id} 
-                        className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex flex-col hover:scale-105 duration-300 transition-transform border-2 border-cyan-700">
+                    <div 
+                        key={projeto.id} 
+                        className="bg-slate-900 rounded-2xl overflow-hidden text-neutral-200 flex flex-col hover:scale-105 duration-300 transition-transform border-2 border-cyan-700"
+                    >
 
                         <img className="w-full object-cover" src={projeto.image} alt={`Foto do Projeto ${projeto.title}`} />
 
