@@ -1,13 +1,13 @@
+import type { TechProps } from "../types";
+import type { ProjectProps } from "../types";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaGitAlt } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoTailwindCss, BiLogoFirebase } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiRedux, SiJest } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 import imgProjectLinks from "../assets/images/linktree.png";
 import imgProjectPortfolio from "../assets/images/portfolio.png";
 import imgProjectTarefas from "../assets/images/tarefa-plus.png";
 import imgProjectWebcars from "../assets/images/webcars.png";
-import type { TechProps } from "../types";
-import type { ProjectProps } from "../types";
 
 export const techs: TechProps[] = [
     {name: "HTML", icon: FaHtml5},
@@ -18,7 +18,6 @@ export const techs: TechProps[] = [
     {name: "TypeScript", icon: BiLogoTypescript},
     {name: "Redux", icon: SiRedux},
     {name: "Firebase", icon: BiLogoFirebase},
-    {name: "Jest", icon: SiJest},
     {name: "TailWindCSS", icon: BiLogoTailwindCss},
     {name: "Git", icon: FaGitAlt},
     {name: "GitHub", icon: FaGithub}

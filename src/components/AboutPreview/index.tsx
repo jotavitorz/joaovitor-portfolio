@@ -25,16 +25,15 @@ export function AboutPreview(){
                     <h3 className="text-4xl sm:text-5xl font-bold mb-6 text-orange-600">Sobre min</h3>
 
                     <p className="mb-4">
-                        Sou João Vitor, desenvolvedor focado em criar soluções web modernas, rápidas e bem estruturadas.
-                        Busco sempre escrever código limpo, entender o porquê das tecnologias e entregar projetos funcionais e visualmente profissionais.                    
+                        Sou João Vitor, desenvolvedor Front-end com foco em React, TypeScript e Next.js, em evolução para o Fullstack. Busco sempre escrever código limpo, entender o porquê das tecnologias e entregar projetos funcionais e visualmente profissionais.                    
                     </p>
 
                     <p className="mb-4">
-                        Tenho experiência em criar interfaces responsivas, integração com APIs e projetos fullstack, unindo performance e design. Mais do que programar, gosto de resolver problemas reais, aprender constantemente e colaborar em ambientes de equipe e inovação.
+                        Tenho experiência em interfaces responsivas, integração com APIs REST e aplicações completas com Firebase — unindo performance, design e boas práticas em cada projeto.
                     </p>
 
                     <p className="mb-4">
-                        Atualmente, foco em consolidar meus conhecimentos e evoluir como Desenvolvedor Front-End / Fullstack, buscando entregar valor através da tecnologia.
+                        Atualmente curso Engenharia de Software e busco minha primeira oportunidade como estagiário ou júnior Front-end, onde possa contribuir com projetos reais enquanto continuo evoluindo.
                     </p>
 
                     <div className="flex w-full gap-10 text-lg">

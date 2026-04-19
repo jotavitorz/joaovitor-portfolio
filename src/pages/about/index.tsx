@@ -15,24 +15,20 @@ export function About(){
                     <h3 className="text-4xl sm:text-5xl font-bold mb-6 text-orange-600">Sobre min</h3>
 
                     <p className="mb-4">
-                        Sou João Vitor, desenvolvedor Front-End em evolução para Fullstack, com foco em criar soluções web modernas, rápidas e bem estruturadas. Entrei na tecnologia aos 16 anos, migrei do estudo de pentest para o desenvolvimento e, desde então, sigo uma jornada marcada por aprendizado contínuo, curiosidade e projetos que mostram minha evolução na prática.                  
+                        Sou João Vitor, desenvolvedor Front-end em evolução para Fullstack, com foco em criar soluções web modernas, rápidas e bem estruturadas.
+                        Entrei na tecnologia aos 16 anos com interesse em segurança da informação, mas me encontrei no desenvolvimento de software, e desde então sigo uma jornada marcada por aprendizado contínuo, curiosidade e projetos que mostram minha evolução na prática.                                 
                     </p>
 
                     <p className="mb-4">
-                        Hoje trabalho com React, TypeScript, JavaScript, HTML, CSS e Tailwind, desenvolvendo interfaces responsivas, integrações com APIs e aplicações completas com Firebase. Gosto de entender o porquê das tecnologias, escrever código limpo e transformar ideias em produtos reais.
+                        Hoje trabalho com React, TypeScript, JavaScript, Next.js, HTML, CSS e Tailwind, desenvolvendo interfaces responsivas, integrações com APIs REST e aplicações completas com Firebase. Gosto de entender o porquê das tecnologias, escrever código limpo e transformar ideias em produtos funcionais.
                     </p>
 
                     <p className="mb-4">
-                        Minha trilha é guiada por um objetivo claro:
-                        me tornar um desenvolvedor Fullstack capaz de entregar soluções inteligentes, bem projetadas e com impacto real.
+                        Projetos como o WebCars, sistema de anúncios com autenticação e painel de usuário, o Tarefas Plus com renderização SSR/SSG em Next.js, e o DevLink com rotas protegidas e Firebase, representam meu compromisso em construir aplicações profissionais, unindo performance, design e boas práticas.
                     </p>
 
                     <p className="mb-4">
-                        Cada projeto que construo — como o Dev Currency, meu LinkTree com Firebase ou sites institucionais modernos — representa meu compromisso em aprender, evoluir e construir aplicações profissionais, sempre unindo performance, design e boas práticas.
-                    </p>
-
-                    <p className="mb-4">
-                        Seja estudando Engenharia de Software, criando novos projetos ou explorando tecnologias, sigo com a mentalidade de crescimento constante e a vontade de levar valor para onde estiver.
+                        Curso Engenharia de Software, tenho experiência administrativa pelo trabalho na Unitri e sigo com uma mentalidade clara: aprender fazendo, entregar valor real e me tornar um desenvolvedor Fullstack capaz de resolver problemas de ponta a ponta.
                     </p>
 
                 </div>
