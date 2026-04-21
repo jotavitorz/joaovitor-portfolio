@@ -32,7 +32,7 @@ export function Contact() {
 
                         <a 
                             className="flex items-center gap-2 md:hover:-translate-y-2 duration-300 ease-in-out" 
-                            href="../../../public/docs/JoaoVitor_CV_PTBR.pdf" download="JoaoVitor_CV_PTBR.pdf" type="application/pdf"
+                            href="../../../public/docs/JoaoVitor-curriculo.pdf" download="JoaoVitor-curriculo.pdf" type="application/pdf"
                         >
                             <IoMdDocument className="w-10 h-10 text-gray-400" />
                             <span className="font-medium">Curriculo</span>
@@ -48,8 +48,7 @@ export function Contact() {
                     </div>
 
                 </section>
-            </div>
-            
+            </div>  
             <div className="flex-2 w-full h-full ">
                 <ContactPreview />
             </div>

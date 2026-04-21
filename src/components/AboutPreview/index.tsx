@@ -37,7 +37,7 @@ export function AboutPreview(){
                     </p>
 
                     <div className="flex w-full gap-10 text-lg">
-                        <a href="../../../public/docs/JoaoVitor_CV_PTBR.pdf" download="JoaoVitor_CV_PTBR.pdf" type="application/pdf" 
+                        <a href="../../../public/docs/JoaoVitor-curriculo.pdf" download="JoaoVitor-curriculo.pdf" type="application/pdf" 
                             className="bg-orange-600 px-4 py-2 rounded-md flex gap-2 items-center text-neutral-200"
                         >
                             <IoMdDocument className="h-5 w-5" /> 
