@@ -39,7 +39,7 @@ export function ProjectsPreview() {
                                 <a href={projeto.deploy} target="_blank" rel="external"
                                 className="py-2 px-4 bg-neutral-100 font-bold rounded-md flex items-center gap-2">
                                     <GrDeploy className="w-4 h-4" />
-                                    <span className="text-sm sm:text-[16px]">Projeto</span>
+                                    <span className="text-sm sm:text-[16px]">Demo</span>
                                 </a>
 
                                 <a href={projeto.repository} target="_blank" rel="external"
