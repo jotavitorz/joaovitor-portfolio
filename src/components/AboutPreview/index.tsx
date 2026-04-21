@@ -15,7 +15,9 @@ export function AboutPreview(){
 
                     <div className="absolute w-30 h-30 right-4 -bottom-8 border-4 overflow-hidden rounded-lg border-gray-500">
                         <a href="https://github.com/jotavitorz" rel="external" target="_blank">
+                            <span className="text-white font-bold absolute bottom-0.5 left-7.5">GiHub</span>
                             <img src={about2Img} alt="Logo Github"/>
+                            
                         </a>
                     </div>
 

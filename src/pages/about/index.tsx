@@ -40,6 +40,7 @@ export function About(){
 
                     <div className="absolute w-20 h-20 sm:w-30 sm:h-30 right-4 -bottom-4 sm:-bottom-8 border-4 overflow-hidden rounded-lg border-gray-500">
                         <a href="https://github.com/jotavitorz" rel="external" target="_blank">
+                            <span className="text-white font-bold absolute bottom-0.5 left-7.5">GiHub</span>
                             <img src={about2Img} alt="Logo Github"/>
                         </a>
                     </div>
