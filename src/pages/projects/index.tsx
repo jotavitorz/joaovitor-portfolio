@@ -22,7 +22,7 @@ export const projetos: ProjetsProps[] = [
   { 
     id: "1", 
     title: "Webcars", 
-    description: "Plataforma web completa para publicação e gerenciamento de anúncios de veículos à venda. Cada usuário possui sua própria conta e administra seus anúncios de forma independente, com upload de imagens e detalhes do veículo. O estado de autenticação é gerenciado globalmente com Context API, controlando os fluxos de usuário logado e não logado, e a validação dos formulários é feita com React Hook Form e Zod, garantindo feedback em tempo real.", 
+    description: "Plataforma de anúncios de veículos onde cada usuário gerencia seus próprios anúncios com upload de imagens, busca e painel privado. O principal desafio foi estruturar o fluxo de autenticação com Firebase Auth + Firestore e controlar o acesso por rotas privadas. O estado global de autenticação foi gerenciado com Context API, e a validação dos formulários com React Hook Form + Zod, garantindo feedback em tempo real sem dependências desnecessárias.", 
     image: imgProjectWebcars, 
     technologies: ["React", "TypeScript", "Firebase", "Context API", "React Hook Form + Zod"], 
     repository: "https://github.com/jotavitorz/web-cars", 
@@ -31,7 +31,7 @@ export const projetos: ProjetsProps[] = [
   { 
     id: "2", 
     title: "Tarefas Plus", 
-    description: "Aplicação de gerenciamento de tarefas desenvolvida como meu primeiro projeto com Next.js. Explora renderização híbrida com SSR para carregar dados do lado do servidor antes da página ser exibida, e SSG com revalidação para gerar páginas estáticas que se atualizam em intervalos definidos. Conta com autenticação via Google com NextAuth.js, criação de tarefas públicas e privadas, e sistema de comentários onde cada usuário gerencia apenas os seus.", 
+    description: "App de gerenciamento de tarefas com autenticação Google, tarefas públicas e privadas e sistema de comentários por usuário. Foi meu primeiro projeto com Next.js, então o desafio central foi entender e aplicar renderização híbrida: SSR para carregar dados antes da página ser exibida e SSG com revalidação para páginas estáticas que se atualizam em intervalos definidos. A autenticação foi implementada com NextAuth.js e a persistência com Firebase Firestore.", 
     image: imgProjectTarefas, 
     technologies: ["Next.js", "React", "Firebase", "NextAuth.js", "CSS Modules"], 
     repository: "https://github.com/jotavitorz/task-manager-nextjs", 
@@ -40,7 +40,7 @@ export const projetos: ProjetsProps[] = [
   { 
     id: "3", 
     title: "LinkTree", 
-    description: "Aplicação inspirada no Linktree que permite ao usuário criar sua página personalizada com links e redes sociais centralizados em um só lugar. Conta com autenticação via Firebase, proteção de rotas privadas, personalização de cores dos botões e página pública para exibição dos links cadastrados.", 
+    description: "Aplicação que permite ao usuário criar sua página pública com links e redes sociais centralizados. O desafio foi implementar o fluxo completo de autenticação com Firebase e proteger as rotas do painel, garantindo que apenas o dono acesse e edite seus links. A página pública é gerada dinamicamente por rota, e o usuário pode personalizar cores e botões em tempo real.", 
     image: imgProjectLinks, 
     technologies: ["React", "TypeScript", "Firebase", "TailwindCSS", "Vite"], 
     repository: "https://github.com/jotavitorz/projeto-linktree", 
@@ -49,16 +49,16 @@ export const projetos: ProjetsProps[] = [
   { 
     id: "4", 
     title: "Portfolio", 
-    description: "Aplicação web criada para apresentar minha trajetória como desenvolvedor Front-End, com navegação SPA, interface totalmente responsiva e foco em experiência do usuário. Conta com formulário de contato funcional integrado ao EmailJS, validação em tempo real com Zod e React Hook Form, além de animações de texto e notificações visuais.", 
+    description: "Meu cartão de visitas digital como desenvolvedor Front-End, com navegação SPA, interface responsiva e formulário de contato funcional. O desafio foi criar uma experiência fluida sem recarregamento de página, com animações de texto e notificações visuais. O envio de mensagens é feito via EmailJS, com validação em tempo real usando React Hook Form + Zod. O projeto com tudo configurado e está organizado com separação de tipos e constantes.", 
     image: imgProjectPortfolio, 
     technologies: ["React", "TypeScript", "TailwindCSS", "React Router DOM", "EmailJS"], 
     repository: "https://github.com/jotavitorz/joaovitor-portfolio", 
-    deploy: "https://joaovitor-portfolio-coral.vercel.app/", 
+    deploy: "https://joaovitor-portfolio-one.vercel.app/", 
   },
   { 
     id: "5", 
     title: "CryptoCurrency", 
-    description: "Aplicação web que exibe preços e variações de criptomoedas em tempo real, consumindo dados diretamente da API pública CoinCap.io. Desenvolvida com foco em componentização, boas práticas e interface responsiva com atualização automática dos valores.", 
+    description: "Dashboard de criptomoedas com preços e variações em tempo real, consumindo a API pública CoinCap.io. O foco do projeto foi praticar consumo de API externa, componentização e atualização automática de dados sem bibliotecas externas de estado. A interface é responsiva e exibe variações positivas e negativas com feedback visual claro.", 
     image: imgProjectCurrency, 
     technologies: ["React", "TypeScript", "Vite", "TailwindCSS", "CoinCap API"], 
     repository: "https://github.com/jotavitorz/cryptocurrency-app", 
@@ -67,7 +67,7 @@ export const projetos: ProjetsProps[] = [
   { 
     id: "6", 
     title: "Book Tracker", 
-    description: "Aplicação para organização e acompanhamento de leituras, com cadastro de livros, controle de progresso por páginas e status automático (quero ler, lendo ou concluído). Desenvolvida com foco em lógica de estado, custom hooks e boas práticas React, com persistência dos dados via LocalStorage.", 
+    description: "App para organizar e acompanhar leituras com controle de progresso por páginas e status automático (quero ler, lendo, concluído). O foco foi aprofundar lógica de estado, custom hooks e boas práticas React sem depender de backend. A persistência é feita via LocalStorage e a transição de status é calculada automaticamente com base no progresso informado pelo usuário.", 
     deploy: "https://booktracker-gamma.vercel.app/", 
     repository: "https://github.com/jotavitorz/book-tracker", 
     image: imgProjectBook, 
