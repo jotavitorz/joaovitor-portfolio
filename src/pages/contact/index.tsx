@@ -7,10 +7,10 @@ export function Contact() {
     return (
         <main className="min-h-screen bg-linear-to-b from-slate-900 to-zinc-900 from-90% flex flex-col-reverse pt-16 md:pt-0 md:flex-row items-center">
             <div 
-                className="flex-1 w-full h-full bg-cover bg-center bg-no-repeat "
+                className="flex-1 w-full h-dvh sm:h-full bg-cover bg-center bg-no-repeat "
                 style={{backgroundImage: `url(${bgImage})`}}
             >
-                <section className="w-full h-full md:min-h-screen bg-zinc-900/85 flex md:pl-16 items-center justify-center md:justify-start max-h-10/12">
+                <section className="w-full h-dvh sm:h-full md:min-h-screen bg-zinc-900/85 flex md:pl-16 items-center justify-center md:justify-start max-h-10/12">
 
                     <div className="flex flex-col gap-6 py-20 md:py-0 text-neutral-200 text-2xl sm:text-3xl">
 

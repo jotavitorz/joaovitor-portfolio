@@ -45,11 +45,11 @@ export function ContactPreview() {
     }
 
     return (
-        <section className="min-h-full w-full bg-slate-900 py-16">
+        <section className="h-dvh flex flex-col justify-center sm:min-h-full w-full bg-slate-900 py-16">
 
             <h2 className="text-center text-4xl sm:text-5xl font-bold text-orange-600">Contato</h2>
 
-            <form onSubmit={handleSubmit(sendEmail)} className=" flex flex-col mx-auto max-w-[680px] my-10 p-4" >
+            <form onSubmit={handleSubmit(sendEmail)} className=" flex flex-col mx-auto max-w-[680px] w-full my-10 p-4" >
 
                 <input 
                     className="bg-slate-850 text-neutral-200 font-semibold h-12 rounded-md py-4 px-2.5 text-lg outline-none focus:border-cyan-800 focus:border-2 shadow-lg focus:shadow-cyan-700/50 shadow-cyan-800/80"
