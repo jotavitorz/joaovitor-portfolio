@@ -20,7 +20,7 @@ export function Hero(){
                     ]}
                     wrapper="h2"
                     speed={30}
-                    className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl inline-block" 
+                    className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl inline-block" 
                     repeat={Infinity}
                 />
 
