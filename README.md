@@ -12,7 +12,7 @@
 
 O **Portfólio – João Vitor** é uma aplicação web desenvolvida com **React**, **TypeScript** e **Vite**, criada para apresentar minhas habilidades como desenvolvedor Front-End, meus principais projetos e formas de contato. O objetivo do projeto é funcionar como meu **cartão de visitas digital**, com uma interface moderna, responsiva e de fácil navegação. O sistema possui **navegação SPA**, páginas organizadas por rotas e formulário de contato integrado com **EmailJS** para envio de mensagens diretamente ao meu e-mail.
 
-**Deploy:** https://joaovitor-portfolio-coral.vercel.app/
+**Deploy:** https://joaovitor-portfolio-one.vercel.app/
 
 ---
 
